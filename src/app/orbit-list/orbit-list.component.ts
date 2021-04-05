@@ -18,6 +18,7 @@ export class OrbitListComponent implements OnInit {
 
   sort(column: string): void {
     // array.sort modifies the array, sorting the items based on the given compare function
+    // Be Sure to look up the syntax and functionality of the satellites function to gain clarity
     this.satellites.sort(function(a: Satellite, b: Satellite): number {
        if(a[column] < b[column]) {
           return -1;
